@@ -4,7 +4,7 @@
   "type": "module",
   "main": "server.ts",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server.ts",
+    "dev": "node --import tsx src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "vitest",
@@ -25,8 +25,8 @@
     "@types/pg": "^8.15.5",
     "@vitest/coverage-v8": "^3.2.4",
     "@vitest/ui": "^3.2.4",
-    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
